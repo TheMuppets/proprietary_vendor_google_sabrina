@@ -12,6 +12,7 @@ android_app_import {
 	name: "ChromecastService",
 	owner: "google",
 	apk: "proprietary/product/priv-app/ChromecastService/ChromecastService.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -36,6 +37,7 @@ android_app_import {
 	name: "TVAxelX",
 	owner: "google",
 	apk: "proprietary/product/priv-app/TVAxelX/TVAxelX.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
