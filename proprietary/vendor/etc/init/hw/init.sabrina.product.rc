@@ -1,0 +1,6 @@
+on post-fs
+    # Generate attestation device ID if needed then remount factory as readonly
+    restorecon_recursive /mnt/vendor/factory
+
+    exec - root root -- /vendor/bin/generate_attestation_device_id ${ro.serialno}
+    mount ext4 /dev/block/by-name/factory /mnt/vendor/factory ro remount

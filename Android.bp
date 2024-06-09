@@ -9,19 +9,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "ChromecastService",
-	owner: "google",
-	apk: "proprietary/product/priv-app/ChromecastService/ChromecastService.apk",
-	preprocessed: true,
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
 	name: "RemotecontrolLogging",
 	owner: "google",
 	apk: "proprietary/product/priv-app/RemotecontrolLogging/RemotecontrolLogging.apk",
@@ -34,15 +21,67 @@ android_app_import {
 }
 
 android_app_import {
-	name: "TVAxelX",
+	name: "SuwCustomization",
 	owner: "google",
-	apk: "proprietary/product/priv-app/TVAxelX/TVAxelX.apk",
-	preprocessed: true,
-	presigned: true,
+	apk: "proprietary/product/priv-app/SuwCustomization/SuwCustomization.apk",
+	overrides: ["DeadpoolService"],
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
 	product_specific: true,
+}
+
+android_app_import {
+	name: "TVAxel",
+	owner: "google",
+	apk: "proprietary/product/priv-app/TVAxel/TVAxel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "ChromecastService",
+	owner: "google",
+	apk: "proprietary/system_ext/priv-app/ChromecastService/ChromecastService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "droidlogic-res",
+	owner: "google",
+	apk: "proprietary/system_ext/priv-app/droidlogic-res/droidlogic-res.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "droidlogic.software.core",
+	owner: "google",
+	jars: ["proprietary/vendor/framework/droidlogic.software.core.jar"],
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.graphics.composer@2.4-service.droidlogic",
+	owner: "google",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.graphics.composer@2.4-service.droidlogic.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
 }
 

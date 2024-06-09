@@ -1,0 +1,45 @@
+#!/vendor/bin/sh
+
+readonly FACTORY_KEYS_DIR="/mnt/vendor/factory"
+readonly DEVICE_ID_XML="${FACTORY_KEYS_DIR}/android_attestation_device_id.xml"
+readonly SERIALNO="$1"
+
+if [[ -z "${SERIALNO}" ]]; then
+  echo "usage: $0 <serialno>"
+  exit 1
+fi
+
+if [[ ! -d "${FACTORY_KEYS_DIR}" ]]; then
+  echo "Device not provisioned"
+  exit
+fi
+
+print_device_id_xml() {
+  echo '<?xml version="1.0" encoding="UTF-8"?>'
+  echo "<ATTESTATION_ID>"
+  echo "  <SERIAL>"
+  echo "    <val>${SERIALNO}</val>"
+  echo "  </SERIAL>"
+  echo "  <BRAND>"
+  echo "    <val>$(getprop ro.product.brand)</val>"
+  echo "  </BRAND>"
+  echo "  <DEVICE>"
+  echo "    <val>$(getprop ro.product.device)</val>"
+  echo "  </DEVICE>"
+  echo "  <PRODUCT>"
+  echo "    <val>$(getprop ro.product.name)</val>"
+  echo "  </PRODUCT>"
+  echo "  <MANUFACTURER>"
+  echo "    <val>$(getprop ro.product.manufacturer)</val>"
+  echo "  </MANUFACTURER>"
+  echo "  <MODEL>"
+  echo "    <val>$(getprop ro.product.model)</val>"
+  echo "  </MODEL>"
+  echo "</ATTESTATION_ID>"
+}
+
+print_device_id_xml > "${DEVICE_ID_XML}"
+restorecon "${DEVICE_ID_XML}"
+chmod 644 "${DEVICE_ID_XML}"
+fsync "${DEVICE_ID_XML}"
+echo "${DEVICE_ID_XML} generated"

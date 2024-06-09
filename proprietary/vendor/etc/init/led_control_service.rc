@@ -1,0 +1,8 @@
+on init
+  setprop vendor.sys.led_control disabled
+  start led_control_service
+
+service led_control_service /vendor/bin/led_control_service
+  user root
+  group system
+  seclabel u:object_r:hal_light_default_exec:s0

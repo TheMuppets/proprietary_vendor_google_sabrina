@@ -16,32 +16,6 @@
   -->
 
 <permissions>
-    <privapp-permissions package="com.google.android.tv.customization">
-        <permission name="android.permission.HDMI_CEC" />
-    </privapp-permissions>
-    <privapp-permissions package="com.google.android.apps.tv.customization">
-        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
-    </privapp-permissions>
-    <privapp-permissions package="com.google.android.tv.axel">
-        <permission name="android.permission.HDMI_CEC" />
-        <permission name="android.permission.MEDIA_CONTENT_CONTROL" />
-        <permission name="android.permission.MODIFY_AUDIO_ROUTING" />
-        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
-    </privapp-permissions>
-    <privapp-permissions package="com.google.android.tv.btapitest">
-        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
-    </privapp-permissions>
-    <privapp-permissions package="com.google.android.chromecast.chromecastservice">
-        <permission name="android.permission.HDMI_CEC" />
-        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
-        <permission name="android.permission.MASTER_CLEAR" />
-        <permission name="android.permission.DELETE_PACKAGES" />
-        <permission name="android.permission.MANAGE_USERS" />
-        <permission name="android.permission.REBOOT" />
-    </privapp-permissions>
-    <privapp-permissions package="com.google.android.tv.remotecontrol.logging">
-        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
-    </privapp-permissions>
     <feature name="com.google.android.feature.GLOBAL_ASSIST_TRIGGERING" />
     <feature name="com.google.android.feature.GOOGLE_BUILD" />
     <feature name="com.google.android.feature.GOOGLE_EXPERIENCE" />

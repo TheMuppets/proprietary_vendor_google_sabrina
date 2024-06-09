@@ -1,0 +1,4 @@
+# Disable kernel module loading after loading all the necessary modules,
+# see b/203032098 for details.
+on property:sys.boot_completed=1 && property:ro.build.type=user
+    write /proc/sys/kernel/modules_disabled 1

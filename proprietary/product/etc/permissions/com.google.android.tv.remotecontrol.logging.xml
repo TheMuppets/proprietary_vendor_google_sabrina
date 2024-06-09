@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2021 Google Inc. All Rights Reserved. -->
+<permissions>
+    <privapp-permissions package="com.google.android.tv.remotecontrol.logging">
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
+    </privapp-permissions>
+</permissions>

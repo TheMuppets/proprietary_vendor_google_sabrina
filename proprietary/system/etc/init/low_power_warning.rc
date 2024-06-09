@@ -1,0 +1,10 @@
+on early-boot
+    start system_control
+    exec_start low_power_warning
+
+service low_power_warning /system/bin/low_power_warning
+    oneshot
+    disabled
+    user root
+    group system audio
+    seclabel u:r:low_power_warning:s0

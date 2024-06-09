@@ -6,4 +6,6 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),sabrina)
 
+$(call add-radio-file-sha1-checked,radio/bootloader.img,e66bb6f6f672f5e29760ca5a725bc859e8f3998d)
+
 endif
