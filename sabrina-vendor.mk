@@ -23,6 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sabrina/proprietary/vendor/bin/generate_attestation_device_id:$(TARGET_COPY_OUT_VENDOR)/bin/generate_attestation_device_id \
     vendor/google/sabrina/proprietary/vendor/bin/hw/android.hardware.drm@1.0-service.castkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.0-service.castkey \
     vendor/google/sabrina/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.netflix:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.netflix \
+    vendor/google/sabrina/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.amlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.amlogic \
     vendor/google/sabrina/proprietary/vendor/bin/key_inject:$(TARGET_COPY_OUT_VENDOR)/bin/key_inject \
     vendor/google/sabrina/proprietary/vendor/bin/led_control_service:$(TARGET_COPY_OUT_VENDOR)/bin/led_control_service \
     vendor/google/sabrina/proprietary/vendor/bin/performance_settings:$(TARGET_COPY_OUT_VENDOR)/bin/performance_settings \
@@ -68,7 +69,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/google/sabrina/proprietary/vendor/bin/hdcp_tx22:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp_tx22 \
     vendor/google/sabrina/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.4-service.droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.4-service.droidlogic \
-    vendor/google/sabrina/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.amlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.amlogic \
     vendor/google/sabrina/proprietary/vendor/bin/systemcontrol:$(TARGET_COPY_OUT_VENDOR)/bin/systemcontrol \
     vendor/google/sabrina/proprietary/vendor/etc/init/android.hardware.graphics.composer@2.4-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.4-service.droidlogic.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/systemcontrol.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/systemcontrol.rc \
