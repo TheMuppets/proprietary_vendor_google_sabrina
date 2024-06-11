@@ -15,6 +15,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sabrina/proprietary/odm/lib/modules/dovi.ko:$(TARGET_COPY_OUT_ODM)/lib/modules/dovi.ko \
     vendor/google/sabrina/proprietary/product/etc/permissions/com.google.android.tv.remotecontrol.logging.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.tv.remotecontrol.logging.xml \
     vendor/google/sabrina/proprietary/product/etc/permissions/privapp-permissions-sabrina.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-sabrina.xml \
+    vendor/google/sabrina/proprietary/product/etc/sysconfig/com.google.android.feature.FAST_PAIRING.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.google.android.feature.FAST_PAIRING.xml \
     vendor/google/sabrina/proprietary/system/bin/low_power_warning:$(TARGET_COPY_OUT_SYSTEM)/bin/low_power_warning \
     vendor/google/sabrina/proprietary/system/etc/init/low_power_warning.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/low_power_warning.rc \
     vendor/google/sabrina/proprietary/system_ext/etc/permissions/com.google.android.chromecast.chromecastservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.android.chromecast.chromecastservice.xml \

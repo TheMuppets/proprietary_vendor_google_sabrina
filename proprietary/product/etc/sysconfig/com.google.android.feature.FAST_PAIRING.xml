@@ -1,0 +1,4 @@
+<config>
+    <!-- OEM feature flag to enable FastPair -->
+    <feature name="com.google.android.feature.FAST_PAIRING" />
+</config>
