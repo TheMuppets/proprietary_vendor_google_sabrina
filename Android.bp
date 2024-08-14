@@ -8,6 +8,193 @@ soong_namespace {
 	],
 }
 
+cc_prebuilt_library_shared {
+	name: "libcast_auth",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libcast_auth.so"],
+			shared_libs: ["libteec", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libckhidl",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libckhidl.so"],
+			shared_libs: ["android.hardware.drm@1.0", "android.hidl.memory@1.0", "libbase", "libcast_auth", "libhidlbase", "libhidlmemory", "libhidltransport", "libhwbinder", "liblog", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libnetflixplugin",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libnetflixplugin.so"],
+			shared_libs: ["liblog", "libutils", "libcutils", "libteec", "android.hardware.drm@1.0", "android.hardware.drm@1.1", "android.hardware.drm@1.2", "android.hardware.drm@1.3", "libbase", "libhidlbase", "libbinder", "libhidlmemory", "android.hardware.drm@1.4", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "liboemcrypto",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/liboemcrypto.so"],
+			shared_libs: ["liblog", "libcrypto", "libcutils", "libutils", "libz", "libteec", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libplayready",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libplayready.so"],
+			shared_libs: ["libutils", "liblog", "libcutils", "libteec", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libplayreadymediadrmplugin",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libplayreadymediadrmplugin.so"],
+			shared_libs: ["libplayready", "libcutils", "liblog", "libstagefright_foundation", "libutils", "libssl", "android.hardware.drm@1.0", "android.hardware.drm@1.1", "android.hardware.drm@1.2", "android.hardware.drm@1.3", "libbase", "libhidlbase", "libbinder", "libhidlmemory", "android.hardware.drm@1.4", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsecmem",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsecmem.so"],
+			shared_libs: ["liblog", "libamavutils", "libcrypto", "libcutils", "libutils", "libz", "libmediahal_resman", "libteec", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libtee_load_video_fw",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libtee_load_video_fw.so"],
+			shared_libs: ["libteec", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libteec",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libteec.so"],
+			shared_libs: ["libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libHwAudio_dcvdec",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/libHwAudio_dcvdec.so"],
+			shared_libs: ["libutils", "libcutils", "liblog", "libm", "libc++", "libc", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libHwAudio_dtshd",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/libHwAudio_dtshd.so"],
+			shared_libs: ["liblog", "libc", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	prefer: true,
+	device_specific: true,
+}
+
 android_app_import {
 	name: "RemotecontrolLogging",
 	owner: "google",
@@ -100,6 +287,211 @@ prebuilt_etc_xml {
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.playready.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "low_power_warning",
+	owner: "google",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/system/bin/low_power_warning"],
+			shared_libs: ["libbase", "liblog", "libutils", "libminui", "libtinyalsa", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+}
+
+sh_binary {
+	name: "device_renew_key.bin",
+	owner: "google",
+	src: "proprietary/vendor/bin/device_renew_key.bin",
+	filename: "device_renew_key.bin",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "generate_attestation_device_id",
+	owner: "google",
+	src: "proprietary/vendor/bin/generate_attestation_device_id",
+	filename: "generate_attestation_device_id",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "android.hardware.drm@1.0-service.castkey",
+	owner: "google",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/hw/android.hardware.drm@1.0-service.castkey"],
+			shared_libs: ["android.hardware.drm@1.0", "libbase", "libhidlbase", "libhidltransport", "libhwbinder", "liblog", "libutils", "libckhidl", "libbinder", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "android.hardware.drm@1.4-service.netflix",
+	owner: "google",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.netflix"],
+			shared_libs: ["android.hardware.drm@1.0", "android.hardware.drm@1.1", "android.hardware.drm@1.2", "android.hardware.drm@1.3", "android.hardware.drm@1.4", "libbase", "libhidlbase", "liblog", "libutils", "libbinder", "libnetflixplugin", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "android.hardware.drm@1.4-service.playready",
+	owner: "google",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.playready"],
+			shared_libs: ["android.hardware.drm@1.0", "android.hardware.drm@1.1", "android.hardware.drm@1.2", "android.hardware.drm@1.3", "libbase", "libhidlbase", "liblog", "libutils", "libbinder", "libplayreadymediadrmplugin", "android.hardware.drm@1.4", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "android.hardware.security.keymint-service.amlogic",
+	owner: "google",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/hw/android.hardware.security.keymint-service.amlogic"],
+			shared_libs: ["android.hardware.security.keymint-V1-ndk_platform", "android.hardware.security.secureclock-V1-ndk_platform", "android.hardware.security.sharedsecret-V1-ndk_platform", "lib_android_keymaster_keymint_utils", "libbase", "libbinder_ndk", "libhardware", "libkeymaster_messages", "libkeymint", "liblog", "libtrusty", "libteec", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "key_inject",
+	owner: "google",
+	src: "proprietary/vendor/bin/key_inject",
+	filename: "key_inject",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "led_control_service",
+	owner: "google",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/led_control_service"],
+			shared_libs: ["libcutils", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "performance_settings",
+	owner: "google",
+	src: "proprietary/vendor/bin/performance_settings",
+	filename: "performance_settings",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "tee-supplicant",
+	owner: "google",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/tee-supplicant"],
+			shared_libs: ["libteec", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "tee_hdcp",
+	owner: "google",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/tee_hdcp"],
+			shared_libs: ["libteec", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "tee_key_inject",
+	owner: "google",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/tee_key_inject"],
+			shared_libs: ["libcutils", "libteec", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "tee_preload_fw",
+	owner: "google",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/tee_preload_fw"],
+			shared_libs: ["libteec", "libtee_load_video_fw", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
 	soc_specific: true,
 }
 
