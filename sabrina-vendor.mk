@@ -36,7 +36,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/sabrina/proprietary/vendor/bin/tee_provision_password_hash:$(TARGET_COPY_OUT_VENDOR)/bin/tee_provision_password_hash \
     vendor/google/sabrina/proprietary/vendor/etc/cert-chain.crt:$(TARGET_COPY_OUT_VENDOR)/etc/cert-chain.crt \
     vendor/google/sabrina/proprietary/vendor/etc/init/chromecast-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chromecast-init.rc \
-    vendor/google/sabrina/proprietary/vendor/etc/init/hw/init.amlogic.sku.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.sku.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/hw/init.sabrina.product.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sabrina.product.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/key_inject.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/key_inject.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/led_control_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/led_control_service.rc \
