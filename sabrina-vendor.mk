@@ -23,30 +23,22 @@ PRODUCT_COPY_FILES += \
     vendor/google/sabrina/proprietary/vendor/bin/device_renew_key.bin:$(TARGET_COPY_OUT_VENDOR)/bin/device_renew_key.bin \
     vendor/google/sabrina/proprietary/vendor/bin/generate_attestation_device_id:$(TARGET_COPY_OUT_VENDOR)/bin/generate_attestation_device_id \
     vendor/google/sabrina/proprietary/vendor/bin/hw/android.hardware.drm@1.0-service.castkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.0-service.castkey \
-    vendor/google/sabrina/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.netflix:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.netflix \
     vendor/google/sabrina/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.amlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.amlogic \
     vendor/google/sabrina/proprietary/vendor/bin/key_inject:$(TARGET_COPY_OUT_VENDOR)/bin/key_inject \
     vendor/google/sabrina/proprietary/vendor/bin/led_control_service:$(TARGET_COPY_OUT_VENDOR)/bin/led_control_service \
     vendor/google/sabrina/proprietary/vendor/bin/performance_settings:$(TARGET_COPY_OUT_VENDOR)/bin/performance_settings \
-    vendor/google/sabrina/proprietary/vendor/bin/tee_dec_hash:$(TARGET_COPY_OUT_VENDOR)/bin/tee_dec_hash \
-    vendor/google/sabrina/proprietary/vendor/bin/tee_hdcp:$(TARGET_COPY_OUT_VENDOR)/bin/tee_hdcp \
-    vendor/google/sabrina/proprietary/vendor/bin/tee_key_inject:$(TARGET_COPY_OUT_VENDOR)/bin/tee_key_inject \
-    vendor/google/sabrina/proprietary/vendor/bin/tee_lock_rpmb:$(TARGET_COPY_OUT_VENDOR)/bin/tee_lock_rpmb \
-    vendor/google/sabrina/proprietary/vendor/bin/tee_provision:$(TARGET_COPY_OUT_VENDOR)/bin/tee_provision \
-    vendor/google/sabrina/proprietary/vendor/bin/tee_provision_password_hash:$(TARGET_COPY_OUT_VENDOR)/bin/tee_provision_password_hash \
     vendor/google/sabrina/proprietary/vendor/etc/cert-chain.crt:$(TARGET_COPY_OUT_VENDOR)/etc/cert-chain.crt \
     vendor/google/sabrina/proprietary/vendor/etc/init/chromecast-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chromecast-init.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/hw/init.sabrina.product.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sabrina.product.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/key_inject.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/key_inject.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/led_control_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/led_control_service.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/performance_settings.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/performance_settings.rc \
-    vendor/google/sabrina/proprietary/vendor/etc/init/tee_hdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee_hdcp.rc \
     vendor/google/sabrina/proprietary/vendor/etc/nrdp_audio_platform_capabilities.json:$(TARGET_COPY_OUT_VENDOR)/etc/nrdp_audio_platform_capabilities.json \
     vendor/google/sabrina/proprietary/vendor/etc/nrdp_platform_capabilities.json:$(TARGET_COPY_OUT_VENDOR)/etc/nrdp_platform_capabilities.json \
     vendor/google/sabrina/proprietary/vendor/etc/permissions/droidlogic.software.core.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/droidlogic.software.core.xml \
     vendor/google/sabrina/proprietary/vendor/etc/permissions/nrdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/nrdp.xml \
     vendor/google/sabrina/proprietary/vendor/lib/libcast_auth.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcast_auth.so \
-    vendor/google/sabrina/proprietary/vendor/lib/libnetflixplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetflixplugin.so \
+    vendor/google/sabrina/proprietary/vendor/lib/libckhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libckhidl.so \
     vendor/google/sabrina/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/google/sabrina/proprietary/vendor/lib/libsecmem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecmem.so \
     vendor/google/sabrina/proprietary/vendor/lib/teetz/2c1a33c0-44cc-11e5-bc3b-0002a5d5c51b.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/2c1a33c0-44cc-11e5-bc3b-0002a5d5c51b.ta \
