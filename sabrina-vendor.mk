@@ -23,24 +23,46 @@ PRODUCT_COPY_FILES += \
     vendor/google/sabrina/proprietary/vendor/bin/device_renew_key.bin:$(TARGET_COPY_OUT_VENDOR)/bin/device_renew_key.bin \
     vendor/google/sabrina/proprietary/vendor/bin/generate_attestation_device_id:$(TARGET_COPY_OUT_VENDOR)/bin/generate_attestation_device_id \
     vendor/google/sabrina/proprietary/vendor/bin/hw/android.hardware.drm@1.0-service.castkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.0-service.castkey \
+    vendor/google/sabrina/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.netflix:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.netflix \
+    vendor/google/sabrina/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.playready:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.playready \
     vendor/google/sabrina/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.amlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.amlogic \
     vendor/google/sabrina/proprietary/vendor/bin/key_inject:$(TARGET_COPY_OUT_VENDOR)/bin/key_inject \
     vendor/google/sabrina/proprietary/vendor/bin/led_control_service:$(TARGET_COPY_OUT_VENDOR)/bin/led_control_service \
     vendor/google/sabrina/proprietary/vendor/bin/performance_settings:$(TARGET_COPY_OUT_VENDOR)/bin/performance_settings \
+    vendor/google/sabrina/proprietary/vendor/bin/tee-supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/tee-supplicant \
+    vendor/google/sabrina/proprietary/vendor/bin/tee_hdcp:$(TARGET_COPY_OUT_VENDOR)/bin/tee_hdcp \
+    vendor/google/sabrina/proprietary/vendor/bin/tee_key_inject:$(TARGET_COPY_OUT_VENDOR)/bin/tee_key_inject \
+    vendor/google/sabrina/proprietary/vendor/bin/tee_preload_fw:$(TARGET_COPY_OUT_VENDOR)/bin/tee_preload_fw \
     vendor/google/sabrina/proprietary/vendor/etc/cert-chain.crt:$(TARGET_COPY_OUT_VENDOR)/etc/cert-chain.crt \
+    vendor/google/sabrina/proprietary/vendor/etc/drm/playready/bgroupcert.dat:$(TARGET_COPY_OUT_VENDOR)/etc/drm/playready/bgroupcert.dat \
+    vendor/google/sabrina/proprietary/vendor/etc/drm/playready/zgpriv.dat:$(TARGET_COPY_OUT_VENDOR)/etc/drm/playready/zgpriv.dat \
+    vendor/google/sabrina/proprietary/vendor/etc/drm/playready/zgpriv_protected.dat:$(TARGET_COPY_OUT_VENDOR)/etc/drm/playready/zgpriv_protected.dat \
+    vendor/google/sabrina/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.netflix.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.netflix.rc \
+    vendor/google/sabrina/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.playready.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.playready.rc \
+    vendor/google/sabrina/proprietary/vendor/etc/init/android.hardware.security.keymint-service.amlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.amlogic.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/chromecast-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chromecast-init.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/hw/init.sabrina.product.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sabrina.product.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/key_inject.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/key_inject.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/led_control_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/led_control_service.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/performance_settings.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/performance_settings.rc \
+    vendor/google/sabrina/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
+    vendor/google/sabrina/proprietary/vendor/etc/init/tee_hdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee_hdcp.rc \
+    vendor/google/sabrina/proprietary/vendor/etc/init/tee_preload_fw.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee_preload_fw.rc \
     vendor/google/sabrina/proprietary/vendor/etc/nrdp_audio_platform_capabilities.json:$(TARGET_COPY_OUT_VENDOR)/etc/nrdp_audio_platform_capabilities.json \
     vendor/google/sabrina/proprietary/vendor/etc/nrdp_platform_capabilities.json:$(TARGET_COPY_OUT_VENDOR)/etc/nrdp_platform_capabilities.json \
+    vendor/google/sabrina/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.amlogic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.amlogic.xml \
     vendor/google/sabrina/proprietary/vendor/etc/permissions/droidlogic.software.core.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/droidlogic.software.core.xml \
+    vendor/google/sabrina/proprietary/vendor/etc/permissions/droidlogic.software.netflix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/droidlogic.software.netflix.xml \
     vendor/google/sabrina/proprietary/vendor/etc/permissions/nrdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/nrdp.xml \
     vendor/google/sabrina/proprietary/vendor/lib/libcast_auth.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcast_auth.so \
     vendor/google/sabrina/proprietary/vendor/lib/libckhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libckhidl.so \
+    vendor/google/sabrina/proprietary/vendor/lib/libnetflixplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetflixplugin.so \
     vendor/google/sabrina/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
+    vendor/google/sabrina/proprietary/vendor/lib/libplayready.so:$(TARGET_COPY_OUT_VENDOR)/lib/libplayready.so \
+    vendor/google/sabrina/proprietary/vendor/lib/libplayreadymediadrmplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libplayreadymediadrmplugin.so \
     vendor/google/sabrina/proprietary/vendor/lib/libsecmem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecmem.so \
+    vendor/google/sabrina/proprietary/vendor/lib/libtee_load_video_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtee_load_video_fw.so \
+    vendor/google/sabrina/proprietary/vendor/lib/libteec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteec.so \
     vendor/google/sabrina/proprietary/vendor/lib/teetz/2c1a33c0-44cc-11e5-bc3b-0002a5d5c51b.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/2c1a33c0-44cc-11e5-bc3b-0002a5d5c51b.ta \
     vendor/google/sabrina/proprietary/vendor/lib/teetz/526fc4fc-7ee6-4a12-96e3-83da9565bce8.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/526fc4fc-7ee6-4a12-96e3-83da9565bce8.ta \
     vendor/google/sabrina/proprietary/vendor/lib/teetz/8efb1e1c-37e5-4326-a5d6-8c33726c7d57.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/8efb1e1c-37e5-4326-a5d6-8c33726c7d57.ta \
@@ -57,4 +79,7 @@ PRODUCT_PACKAGES += \
     TVAxel \
     ChromecastService \
     droidlogic-res \
-    droidlogic.software.core
+    droidlogic.software.core \
+    android.hardware.security.keymint-service.amlogic.xml \
+    manifest_android.hardware.drm@1.4-service.netflix.xml \
+    manifest_android.hardware.drm@1.4-service.playready.xml
