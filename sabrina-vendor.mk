@@ -58,26 +58,3 @@ PRODUCT_PACKAGES += \
     ChromecastService \
     droidlogic-res \
     droidlogic.software.core
-PRODUCT_COPY_FILES += \
-    vendor/google/sabrina/proprietary/vendor/bin/hdcp_tx22:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp_tx22 \
-    vendor/google/sabrina/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.4-service.droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.4-service.droidlogic \
-    vendor/google/sabrina/proprietary/vendor/bin/systemcontrol:$(TARGET_COPY_OUT_VENDOR)/bin/systemcontrol \
-    vendor/google/sabrina/proprietary/vendor/etc/init/android.hardware.graphics.composer@2.4-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.4-service.droidlogic.rc \
-    vendor/google/sabrina/proprietary/vendor/etc/init/systemcontrol.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/systemcontrol.rc \
-    vendor/google/sabrina/proprietary/vendor/lib/android.hardware.graphics.composer@2.1-resources-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.1-resources-vendor.so \
-    vendor/google/sabrina/proprietary/vendor/lib/android.hardware.graphics.composer@2.2-resources-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.2-resources-vendor.so \
-    vendor/google/sabrina/proprietary/vendor/lib/hw/hwcomposer.amlogic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.amlogic.so \
-    vendor/google/sabrina/proprietary/vendor/lib/libfbc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfbc.so \
-    vendor/google/sabrina/proprietary/vendor/lib/libmeson_display_adapter_remote.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmeson_display_adapter_remote.so \
-    vendor/google/sabrina/proprietary/vendor/lib/libmeson_display_service.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmeson_display_service.so \
-    vendor/google/sabrina/proprietary/vendor/lib/libpqcontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpqcontrol.so \
-    vendor/google/sabrina/proprietary/vendor/lib/libsystemcontrolservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystemcontrolservice.so \
-    vendor/google/sabrina/proprietary/vendor/lib/libvideotunnel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideotunnel.so \
-    vendor/google/sabrina/proprietary/vendor/lib/vendor.amlogic.display.meson_display_ipc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.display.meson_display_ipc@1.0.so \
-    vendor/google/sabrina/proprietary/vendor/lib/vendor.amlogic.hardware.droidvold@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.droidvold@1.0.so \
-    vendor/google/sabrina/proprietary/vendor/lib/vendor.amlogic.hardware.systemcontrol@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.systemcontrol@1.0.so \
-    vendor/google/sabrina/proprietary/vendor/lib/vendor.amlogic.hardware.systemcontrol@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.systemcontrol@1.1.so \
-    vendor/google/sabrina/proprietary/vendor/lib/vendor.amlogic.hardware.tvserver@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.tvserver@1.0.so
-
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-service.droidlogic.xml

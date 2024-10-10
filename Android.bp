@@ -4,7 +4,7 @@
 
 soong_namespace {
 	imports: [
-		"vendor/amlogic/g12-common",
+		"vendor/amlogic/sm1-common",
 	],
 }
 
@@ -73,15 +73,6 @@ dex_import {
 	name: "droidlogic.software.core",
 	owner: "google",
 	jars: ["proprietary/vendor/framework/droidlogic.software.core.jar"],
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.graphics.composer@2.4-service.droidlogic.xml",
-	owner: "google",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.graphics.composer@2.4-service.droidlogic.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
