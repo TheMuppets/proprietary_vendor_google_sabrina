@@ -5,3 +5,4 @@ on init
 service led_control_service /vendor/bin/led_control_service
   user root
   group system
+
