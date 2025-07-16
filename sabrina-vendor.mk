@@ -61,9 +61,6 @@ PRODUCT_PACKAGES += \
     RemotecontrolLogging \
     SuwCustomization \
     TVAxel \
-    ChromecastService \
-    droidlogic-res \
-    droidlogic.software.core \
     android.hardware.security.keymint-service.amlogic.xml \
     manifest_android.hardware.drm@1.4-service.netflix.xml \
     manifest_android.hardware.drm@1.4-service.playready.xml \
