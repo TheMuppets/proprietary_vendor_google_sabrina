@@ -47,6 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sabrina/proprietary/vendor/lib/teetz/ff2a4bea-ef6d-11e6-89ccd4ae52a7b3b3.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/ff2a4bea-ef6d-11e6-89ccd4ae52a7b3b3.ta
 
 PRODUCT_PACKAGES += \
+    libGLES_mali \
     libcast_auth \
     libckhidl \
     libnetflixplugin \
@@ -78,3 +79,6 @@ PRODUCT_PACKAGES += \
     tee_hdcp \
     tee_key_inject \
     tee_preload_fw
+
+PRODUCT_PACKAGES += \
+    vendor_lib_hw_vulkan_amlogic_so
