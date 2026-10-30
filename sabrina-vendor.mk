@@ -8,24 +8,20 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/google/sabrina/proprietary/odm/etc/etc/bluetooth/bt_vendor.conf:$(TARGET_COPY_OUT_ODM)/etc/etc/bluetooth/bt_vendor.conf \
     vendor/google/sabrina/proprietary/odm/etc/firmware/firmware.le:$(TARGET_COPY_OUT_ODM)/etc/firmware/firmware.le \
+    vendor/google/sabrina/proprietary/odm/etc/init/low_power_warning.rc:$(TARGET_COPY_OUT_ODM)/etc/init/low_power_warning.rc \
+    vendor/google/sabrina/proprietary/odm/etc/lowPowerWarning/lowPowerWarning.wav:$(TARGET_COPY_OUT_ODM)/etc/lowPowerWarning/lowPowerWarning.wav \
+    vendor/google/sabrina/proprietary/odm/etc/lowPowerWarning/lowPowerWarningDefault.png:$(TARGET_COPY_OUT_ODM)/etc/lowPowerWarning/lowPowerWarningDefault.png \
     vendor/google/sabrina/proprietary/odm/etc/tvconfig/pq/pq.db:$(TARGET_COPY_OUT_ODM)/etc/tvconfig/pq/pq.db \
     vendor/google/sabrina/proprietary/odm/etc/tvconfig/pq/pq_default.ini:$(TARGET_COPY_OUT_ODM)/etc/tvconfig/pq/pq_default.ini \
-    vendor/google/sabrina/proprietary/odm/lib/modules/dovi.ko:$(TARGET_COPY_OUT_ODM)/lib/modules/dovi.ko \
     vendor/google/sabrina/proprietary/product/etc/permissions/com.google.android.tv.remotecontrol.logging.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.tv.remotecontrol.logging.xml \
     vendor/google/sabrina/proprietary/product/etc/permissions/privapp-permissions-sabrina.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-sabrina.xml \
     vendor/google/sabrina/proprietary/product/etc/sysconfig/com.google.android.feature.FAST_PAIRING.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.google.android.feature.FAST_PAIRING.xml \
-    vendor/google/sabrina/proprietary/system/etc/init/low_power_warning.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/low_power_warning.rc \
     vendor/google/sabrina/proprietary/system_ext/etc/permissions/com.google.android.chromecast.chromecastservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.android.chromecast.chromecastservice.xml \
     vendor/google/sabrina/proprietary/system_ext/etc/permissions/droidlogic_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/droidlogic_permissions.xml \
     vendor/google/sabrina/proprietary/vendor/etc/bluetooth/BCM4359C0.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/BCM4359C0.hcd \
     vendor/google/sabrina/proprietary/vendor/etc/cert-chain.crt:$(TARGET_COPY_OUT_VENDOR)/etc/cert-chain.crt \
-    vendor/google/sabrina/proprietary/vendor/etc/drm/playready/bgroupcert.dat:$(TARGET_COPY_OUT_VENDOR)/etc/drm/playready/bgroupcert.dat \
-    vendor/google/sabrina/proprietary/vendor/etc/drm/playready/zgpriv.dat:$(TARGET_COPY_OUT_VENDOR)/etc/drm/playready/zgpriv.dat \
-    vendor/google/sabrina/proprietary/vendor/etc/drm/playready/zgpriv_protected.dat:$(TARGET_COPY_OUT_VENDOR)/etc/drm/playready/zgpriv_protected.dat \
-    vendor/google/sabrina/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.netflix.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.netflix.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.playready.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.playready.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/android.hardware.security.keymint-service.amlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.amlogic.rc \
-    vendor/google/sabrina/proprietary/vendor/etc/init/chromecast-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chromecast-init.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/hw/init.sabrina.product.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sabrina.product.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/key_inject.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/key_inject.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/led_control_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/led_control_service.rc \
@@ -34,12 +30,12 @@ PRODUCT_COPY_FILES += \
     vendor/google/sabrina/proprietary/vendor/etc/init/tee_hdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee_hdcp.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/tee_preload_fw.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee_preload_fw.rc \
     vendor/google/sabrina/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.amlogic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.amlogic.xml \
-    vendor/google/sabrina/proprietary/vendor/etc/permissions/droidlogic.software.core.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/droidlogic.software.core.xml \
     vendor/google/sabrina/proprietary/vendor/etc/permissions/droidlogic.software.netflix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/droidlogic.software.netflix.xml \
     vendor/google/sabrina/proprietary/vendor/etc/permissions/nrdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/nrdp.xml \
-    vendor/google/sabrina/proprietary/vendor/firmware/wifi/config_bcm4359c0_ag.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/config_bcm4359c0_ag.txt \
-    vendor/google/sabrina/proprietary/vendor/firmware/wifi/fw_bcm4359c0_ag.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/fw_bcm4359c0_ag.bin \
-    vendor/google/sabrina/proprietary/vendor/firmware/wifi/nvram_ap6398s.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/nvram_ap6398s.txt \
+    vendor/google/sabrina/proprietary/vendor/lib/firmware/config_bcm4359c0_ag.txt:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/config_bcm4359c0_ag.txt \
+    vendor/google/sabrina/proprietary/vendor/lib/firmware/fw_bcm4359c0_ag.bin:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/fw_bcm4359c0_ag.bin \
+    vendor/google/sabrina/proprietary/vendor/lib/firmware/nvram_ap6398s.txt:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/nvram_ap6398s.txt \
+    vendor/google/sabrina/proprietary/vendor/lib/teetz/2088528d-102a-4716-b940-23fd9be04adf.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/2088528d-102a-4716-b940-23fd9be04adf.ta \
     vendor/google/sabrina/proprietary/vendor/lib/teetz/2c1a33c0-44cc-11e5-bc3b-0002a5d5c51b.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/2c1a33c0-44cc-11e5-bc3b-0002a5d5c51b.ta \
     vendor/google/sabrina/proprietary/vendor/lib/teetz/526fc4fc-7ee6-4a12-96e3-83da9565bce8.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/526fc4fc-7ee6-4a12-96e3-83da9565bce8.ta \
     vendor/google/sabrina/proprietary/vendor/lib/teetz/8efb1e1c-37e5-4326-a5d6-8c33726c7d57.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/8efb1e1c-37e5-4326-a5d6-8c33726c7d57.ta \
@@ -52,37 +48,36 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
+    lib_android_keymaster_akeymint_utils \
+    libacppcose_rkp \
+    libakeymint \
+    libakeymint_remote_prov_support \
+    libamavutils \
     libcast_auth \
     libckhidl \
-    libnetflixplugin \
     liboemcrypto \
     libplayready \
     libplayreadymediadrmplugin \
     libsecmem \
     libtee_load_video_fw \
-    libteec \
-    libHwAudio_dcvdec \
-    libHwAudio_dtshd \
     RemotecontrolLogging \
     SuwCustomization \
     TVAxel \
-    android.hardware.security.keymint-service.amlogic.xml \
-    manifest_android.hardware.drm@1.4-service.netflix.xml \
+    android.hardware.security.keymint-service-no-rkp.amlogic.xml \
     manifest_android.hardware.drm@1.4-service.playready.xml \
-    low_power_warning \
     device_renew_key.bin \
     generate_attestation_device_id \
     android.hardware.drm@1.0-service.castkey \
-    android.hardware.drm@1.4-service.netflix \
     android.hardware.drm@1.4-service.playready \
     android.hardware.security.keymint-service.amlogic \
-    key_inject \
     led_control_service \
     performance_settings \
     tee-supplicant \
     tee_hdcp \
     tee_key_inject \
-    tee_preload_fw
+    tee_preload_fw \
+    tee_provision \
+    low_power_warning
 
 PRODUCT_PACKAGES += \
     vendor_lib_hw_vulkan_amlogic_so

@@ -25,6 +25,7 @@
         <permission name="android.permission.CHANGE_CONFIGURATION" />
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
         <permission name="android.permission.TV_INPUT_HARDWARE"/>
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
     </privapp-permissions>
 </permissions>
 

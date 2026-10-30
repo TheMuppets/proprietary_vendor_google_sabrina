@@ -38,8 +38,13 @@ print_device_id_xml() {
   echo "</ATTESTATION_ID>"
 }
 
-print_device_id_xml > "${DEVICE_ID_XML}"
-restorecon "${DEVICE_ID_XML}"
-chmod 644 "${DEVICE_ID_XML}"
-fsync "${DEVICE_ID_XML}"
-echo "${DEVICE_ID_XML} generated"
+# b/330440622: Prevent the device ID attestation from being updated by GSI.
+# Only clamping the first 7 characters because there may be other product names,
+# i.e. sabrina_prod_*.
+if [[ $(getprop ro.product.name | head -c 7) == "sabrina" ]]; then
+  print_device_id_xml > "${DEVICE_ID_XML}"
+  restorecon "${DEVICE_ID_XML}"
+  chmod 644 "${DEVICE_ID_XML}"
+  fsync "${DEVICE_ID_XML}"
+  echo "${DEVICE_ID_XML} generated"
+fi

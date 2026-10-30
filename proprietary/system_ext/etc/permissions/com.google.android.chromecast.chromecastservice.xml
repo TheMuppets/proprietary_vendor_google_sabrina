@@ -12,5 +12,15 @@
         <permission name="android.permission.WRITE_SECURE_SETTINGS" />
         <permission name="android.permission.FORCE_STOP_PACKAGES" />
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.SET_TIME"/>
+        <permission name="android.permission.DUMP"/>
+        <permission name="android.permission.BACKUP"/>
+        <permission name="android.permission.SET_TIME_ZONE"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.MANAGE_DEBUGGING"/>
+        <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+        <permission name="android.permission.DELETE_CACHE_FILES"/>
     </privapp-permissions>
 </permissions>

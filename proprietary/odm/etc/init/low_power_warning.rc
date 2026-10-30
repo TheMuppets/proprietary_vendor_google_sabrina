@@ -1,0 +1,13 @@
+on early-boot
+    # Copy the prop so that low_power_warning is permitted to read
+    setprop ro.odm.low_power_warning.usb_config ${persist.sys.usb.config}
+
+    start system_control
+    exec_start low_power_warning
+
+service low_power_warning /odm/bin/low_power_warning
+    oneshot
+    disabled
+    user root
+    group system audio media
+    seclabel u:r:low_power_warning:s0
