@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sabrina/proprietary/vendor/etc/cert-chain.crt:$(TARGET_COPY_OUT_VENDOR)/etc/cert-chain.crt \
     vendor/google/sabrina/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.playready.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.playready.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/android.hardware.security.keymint-service.amlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.amlogic.rc \
+    vendor/google/sabrina/proprietary/vendor/etc/init/hdcp_tx22.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hdcp_tx22.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/hw/init.sabrina.product.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sabrina.product.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/key_inject.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/key_inject.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/led_control_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/led_control_service.rc \
@@ -68,6 +69,7 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.4-service.playready.xml \
     device_renew_key.bin \
     generate_attestation_device_id \
+    hdcp_tx22 \
     android.hardware.drm@1.0-service.castkey \
     android.hardware.drm@1.4-service.playready \
     android.hardware.security.keymint-service.amlogic \

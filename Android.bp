@@ -488,6 +488,33 @@ sh_binary {
 }
 
 cc_prebuilt_binary {
+    name: "hdcp_tx22",
+    owner: "google",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hdcp_tx22",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "android.hardware.drm@1.0-service.castkey",
     owner: "google",
     target: {
