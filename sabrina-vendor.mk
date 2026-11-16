@@ -62,9 +62,13 @@ PRODUCT_PACKAGES += \
     libplayreadymediadrmplugin \
     libsecmem \
     libtee_load_video_fw \
+    libjniuevent \
     RemotecontrolLogging \
     SuwCustomization \
     TVAxel \
+    ChromecastServiceAml \
+    droidlogic-res \
+    droidlogic.software.core \
     android.hardware.security.keymint-service-no-rkp.amlogic.xml \
     manifest_android.hardware.drm@1.4-service.playready.xml \
     device_renew_key.bin \
