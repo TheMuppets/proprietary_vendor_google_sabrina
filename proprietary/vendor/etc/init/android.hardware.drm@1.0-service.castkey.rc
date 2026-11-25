@@ -1,0 +1,7 @@
+service vendor.drm-castkey-hal-1-0 /vendor/bin/hw/android.hardware.drm@1.0-service.castkey
+    interface android.hardware.drm@1.0::ICryptoFactory castkey
+    interface android.hardware.drm@1.0::IDrmFactory castkey
+    interface android.hidl.base@1.0::IBase castkey
+    class hal
+    user media
+    group mediadrm drmrpc

@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/sabrina/proprietary/system_ext/etc/permissions/droidlogic_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/droidlogic_permissions.xml \
     vendor/google/sabrina/proprietary/vendor/etc/bluetooth/BCM4359C0.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/BCM4359C0.hcd \
     vendor/google/sabrina/proprietary/vendor/etc/cert-chain.crt:$(TARGET_COPY_OUT_VENDOR)/etc/cert-chain.crt \
+    vendor/google/sabrina/proprietary/vendor/etc/init/android.hardware.drm@1.0-service.castkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.0-service.castkey.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.playready.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.playready.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/android.hardware.security.keymint-service.amlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.amlogic.rc \
     vendor/google/sabrina/proprietary/vendor/etc/init/hdcp_tx22.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hdcp_tx22.rc \
