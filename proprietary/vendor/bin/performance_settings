@@ -2,4 +2,4 @@
 
 # Move usb interrupts to CPU2 to fix b/294643186.
 usb_device_irq_num=$(grep -E -m1 "xhci-hcd:usb1" /proc/interrupts | cut -d ':' -f 1 | tr -d ' ')
-echo 4 > /proc/irq/"${usb_device_irq_num}"/smp_affinity
+[ -f /proc/irq/"${usb_device_irq_num}"/smp_affinity ] && echo 4 > /proc/irq/"${usb_device_irq_num}"/smp_affinity
